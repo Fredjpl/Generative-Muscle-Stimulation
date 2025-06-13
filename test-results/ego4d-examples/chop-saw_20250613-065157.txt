@@ -1,0 +1,95 @@
+LLM model: 
+ o1
+
+clean, new architecture 
+hands_obj: 
+ none
+
+Input user request: 
+ Help me cut this wood
+
+Handedness: 
+ none
+
+LLM outputLLM output (recognition): 
+ Below is a step-by-step breakdown based on what is visible in your photo and your goal of cutting the wood. I’ve also incorporated your preference for right-handed use and that you’re located in Berlin, Germany:
+
+1) Object Identification and Description  
+   • The tool in the image is a compound miter saw. It has a sturdy metal base with a rotating circular blade mounted above it.  
+   • Its main color is yellow with some gray or metallic sections. The saw has a handle on top (with a trigger switch) and a hinged arm that allows the blade to move downward.  
+   • A piece of wood is resting on the saw’s base, ready to be cut.  
+
+2) Object Functionality  
+   • A compound miter saw is designed to make accurate crosscuts (straight cuts across the wood) and miter cuts (angled cuts) in lumber or similar materials.  
+   • The saw’s head pivots down to cut through the workpiece. Many miter saws also tilt or swivel for angled cuts, but the primary function is to slice wood quickly and precisely in a controlled motion.  
+
+3) Suggested Use (Right-Handed)  
+   a. Safety First:  
+      – Wear safety goggles and ensure the miter saw is securely placed on a stable surface.  
+      – Check that the wood is positioned firmly against the saw’s fence (the vertical guide at the back).  
+      – Keep your hands clear of the blade path.  
+
+   b. Positioning and Grip:  
+      – Because you are right-handed, place your left hand on the wood to keep it steady against the fence.  
+      – Grip the saw’s handle on top with your right hand. This handle typically has the trigger to activate the blade.  
+
+   c. Cutting Action:  
+      – With the piece of wood firmly held, squeeze the trigger with your right hand to start the blade.  
+      – Slowly lower the saw head onto the wood in a controlled motion.  
+      – After the blade severs the wood, release the trigger and wait until the blade stops spinning before lifting the saw head back up.  
+
+4) Personalization Notes (Berlin, Germany)  
+   • Be mindful of local noise ordinances if you’re in a residential area—power saws can be quite loud.  
+   • If working outdoors, check the weather. Damp or very cold conditions can affect the wood and the saw’s performance.  
+
+By following these steps and prioritizing safety, you’ll make clean, precise cuts on your lumber. Enjoy your woodworking project, and take care with each cut!
+
+LLM output (movement): 
+ - limb: hand  
+  handedness: left  
+  movement:  
+    1. Left hand: Rotate the left forearm forward by about 30 degrees so the palm faces inward toward the wood.  
+    2. Left hand: Move it horizontally across the saw’s base until the fingers rest firmly on the wood, pressing it against the saw fence.
+
+- limb: hand  
+  handedness: right  
+  movement:  
+    1. Right arm: Swing the arm forward approximately 45 degrees from the backward position, bringing the hand above the saw’s handle.  
+    2. Right forearm: Rotate inward about 30 degrees so the palm aligns with the handle grip.  
+    3. Right hand: Wrap the fingers around the handle, placing the thumb on top near the trigger.  
+    4. Right hand: Squeeze the trigger gently and lower the saw head by flexing the elbow about 20 degrees to guide the blade through the wood.  
+    5. Right hand: Release the trigger once the cut is complete and then return the saw head to its raised position.
+
+input pose (skeleton directions): 
+ Directions: {'Skeleton': 'center', 'Hips': 'center', 'Spine': 'center', 'LeftUpLeg': 'left', 'LeftLeg': 'left', 'LeftFoot': 'left', 'RightUpLeg': 'right', 'RightLeg': 'right', 'RightFoot': 'right', 'Neck': 'center', 'Head': 'center', 'LeftShoulder': 'down', 'LeftArm': 'down', 'LeftForeArm': 'down', 'LeftHand': 'down', 'LeftHandIndex1': 'down', 'LeftHandMiddle1': 'down', 'LeftHandPinky1': 'down', 'LeftHandRing1': 'down', 'LeftHandThumb1': 'down', 'RightShoulder': 'down', 'RightArm': 'backward', 'RightForeArm': 'backward', 'RightHand': 'upward', 'RightHandIndex1': 'upward', 'RightHandMiddle1': 'upward', 'RightHandPinky1': 'upward', 'RightHandRing1': 'upward', 'RightHandThumb1': 'upward'}
+
+LLM output (gesture without checkpoint): 
+ llm output gestures (without checkpoint): 
+Left hand:
+
+1) Rotate the left forearm forward by about 30 degrees so the palm faces inward toward the wood.
+<left>[shoulder][flexion][upward][30]
+
+2) Move it horizontally across the saw’s base until the fingers rest firmly on the wood, pressing it against the saw fence.
+<left>[shoulder][abduction][outward][30]
+
+
+Right hand:
+
+1) Right arm: Swing the arm forward approximately 45 degrees from the backward position, bringing the hand above the saw’s handle.
+<right>[shoulder][flexion][upward][45]
+
+2) Right forearm: Rotate inward about 30 degrees so the palm aligns with the handle grip.
+<skip>
+
+3) Right hand: Wrap the fingers around the handle, placing the thumb on top near the trigger.
+<right>[grip][flexion][inward][15]
+
+4) Right hand: Squeeze the trigger gently and lower the saw head by flexing the elbow about 20 degrees to guide the blade through the wood.
+<right>[grip][flexion][inward][5]  
+<right>[elbow][flexion][upward][20]
+
+5) Right hand: Release the trigger once the cut is complete and then return the saw head to its raised position.
+<right>[release][extension][outward][5]  
+<right>[elbow][extension][downward][20]
+

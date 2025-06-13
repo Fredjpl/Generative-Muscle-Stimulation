@@ -1,0 +1,87 @@
+LLM model: 
+ o1
+
+clean, new architecture 
+hands_obj: 
+ none
+
+Input user request: 
+ Help me chop the onion
+
+Handedness: 
+ none
+
+LLM outputLLM output (recognition): 
+ 1. From the image, the main object of interest is a red onion resting on a small cutting board, along with two knives nearby (one paring knife with a green handle and one larger chef’s knife).
+
+2. The object being prepared is the onion, which has a rounded shape, purplish-red outer skin, and a layered interior. In the photo, it appears to be roughly the size of a tennis ball (or slightly smaller), cut into a couple of sections on the board.
+
+3. Since you are right-handed (based on your profile) and not currently holding the onion or knife with either hand, you’d typically secure the onion with your left hand while using a suitable knife in your right hand for chopping.
+
+4. A red onion like this is commonly used in cooking to add both flavor and color to dishes. It has a slightly crisp texture when fresh and can be diced, sliced, or chopped into small pieces to suit a variety of recipes.
+
+5. In this context, its primary function is culinary: you’ll peel away any remaining skin and chop it using a stable cutting grip, then add the chopped onion to your dish.
+
+────────────────────────────────────
+Movement/Chopping Suggestion (Right-Handed):
+────────────────────────────────────
+• Place the red onion flat on the cutting board to keep it stable.  
+• Use your left hand to gently hold the onion in place, curling your fingertips underneath to keep them safe.  
+• With your right hand (your dominant hand), grip the larger chef’s knife.  
+• Slice off any remaining root or stem ends as needed.  
+• Make vertical cuts, then horizontal cuts across the onion, adjusting the size of the pieces to your preference.  
+
+Because you’re in Berlin, you can easily find fresh onions year-round in local markets, and red onions work wonderfully for many German-inspired dishes (or international recipes). Enjoy your meal preparation!
+
+LLM output (movement): 
+ - limb: hand  
+  handedness: left  
+  movement:  
+    1. Left hand: Raise your left arm forward about 20 degrees from its downward position.  
+    2. Left hand: Rotate your forearm so that your palm faces the onion on the cutting board.  
+    3. Left hand: Curl your fingertips slightly and place them on top of the onion to hold it firmly in place.  
+
+- limb: hand  
+  handedness: right  
+  movement:  
+    1. Right hand: Rotate your right arm forward about 90 degrees from its backward position.  
+    2. Right hand: Lower your forearm so your hand is level with the chef’s knife handle.  
+    3. Right hand: Wrap your fingers around the handle and lift the knife.  
+    4. Right hand: Position the blade against the onion and make several vertical cuts by gently pressing downward.  
+    5. Right hand: Rotate the blade as needed to make horizontal cuts, creating small pieces of onion.  
+
+input pose (skeleton directions): 
+ Directions: {'Skeleton': 'center', 'Hips': 'center', 'Spine': 'center', 'LeftUpLeg': 'left', 'LeftLeg': 'left', 'LeftFoot': 'left', 'RightUpLeg': 'right', 'RightLeg': 'right', 'RightFoot': 'right', 'Neck': 'center', 'Head': 'center', 'LeftShoulder': 'down', 'LeftArm': 'down', 'LeftForeArm': 'down', 'LeftHand': 'down', 'LeftHandIndex1': 'down', 'LeftHandMiddle1': 'down', 'LeftHandPinky1': 'down', 'LeftHandRing1': 'down', 'LeftHandThumb1': 'down', 'RightShoulder': 'down', 'RightArm': 'backward', 'RightForeArm': 'backward', 'RightHand': 'upward', 'RightHandIndex1': 'upward', 'RightHandMiddle1': 'upward', 'RightHandPinky1': 'upward', 'RightHandRing1': 'upward', 'RightHandThumb1': 'upward'}
+
+LLM output (gesture without checkpoint): 
+ llm output gestures (without checkpoint): 
+Left hand:
+
+1) Raise your left arm forward about 20 degrees from its downward position.  
+<left>[shoulder][flexion][forward][20]
+
+2) Rotate your forearm so that your palm faces the onion on the cutting board.  
+<left>[forearm][pronation][inward][90]
+
+3) Curl your fingertips slightly and place them on top of the onion to hold it firmly in place.  
+<left>[grip][flexion][inward][15]
+
+
+Right hand:
+
+1) Rotate your right arm forward about 90 degrees from its backward position.  
+<right>[shoulder][flexion][forward][90]
+
+2) Lower your forearm so your hand is level with the chef’s knife handle.  
+<right>[elbow][extension][downward][30]
+
+3) Wrap your fingers around the handle and lift the knife.  
+<right>[grip][flexion][inward][15]  
+<right>[shoulder][flexion][upward][10]
+
+4) Position the blade against the onion and make several vertical cuts by gently pressing downward.  
+<right>[arm][push][downward][20]
+
+5) Rotate the blade as needed to make horizontal cuts, creating small pieces of onion.  
+<skip>  
+
