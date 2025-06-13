@@ -5,7 +5,7 @@ import pandas as pd
 import cv2
 import geocoder
 from speech_engine import SpeechEngine
-# from gesture_processor import GestureProcessor
+from gesture_processor import GestureProcessor
 from mocap_oscserver import MocapOSCServer
 import os
 import sys
@@ -39,7 +39,7 @@ class LLMGesture:
 
         self.speech_engine = SpeechEngine()
         self.skeleton = MocapOSCServer()
-        # self.gesture_processor = GestureProcessor(skeleton = self.skeleton, instruction_pause=False)
+        self.gesture_processor = GestureProcessor(skeleton = self.skeleton, instruction_pause=False)
 
 
     # Main LLM reasoning function for the whole pipeline
